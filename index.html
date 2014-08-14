@@ -4,7 +4,7 @@ layout: default
 
 <div class="home">
   <div class="posts">
-    {% for post in site.categories.keep %}
+    {% for post in paginator.posts%}
       <div class="post">
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> <br><br>
